@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="p5.min.js"></script>
+    <script>
+        function insert(num) {
+    document.form.text.value += num ;
+} 
+
+function eal() {
+    var exp = document.form.text.value
+    if (exp) {
+    document.form.text.value = eval(document.form.text.value);
+    }    
+}
+
+function hel() {
+    document.form.text.value = "";
+}
+
+function hem() {
+    document.form.text.value -= 1 
+}
+    </script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="form">
+    <input class = "textview" name = text>
+    </form>
+    <script src="sketch.js"></script>
+    <script src = "calKey.js"></script>
+</body>
+</html>
